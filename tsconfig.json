@@ -1,21 +1,17 @@
 {
   "compilerOptions": {
     "target": "es2020",
-    "module": "commonjs",
-    "esModuleInterop": true,
-    "strict": true,
-    "outDir": "dist",
-    "rootDir": ".",
-    "declaration": true,
-    "sourceMap": true,
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
+    "module": "esnext",
+    "moduleResolution": "node",
     "lib": ["es2021", "WebWorker", "DOM"],
-    "types": ["@cloudflare/workers-types", "node"],
-    "paths": {
-      "@/*": ["./packages/*"]
-    }
+    "outDir": "dist",
+    "rootDir": "packages/api",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "types": ["@cloudflare/workers-types", "node"]
   },
-  "include": ["packages/**/*", "templates/**/*", "vitest.setup.ts"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["packages/api"]
 }
