@@ -1,7 +1,9 @@
 name = "aiocatalogs"
-main = "index.js"
+main = "dist/index.js"
 compatibility_date = "2025-06-09"
-nodejs_compat = true
+
+[build]
+command = "npm run build"
 
 [vars]
 AIOCATALOGS_API_RATE_LIMIT = true
