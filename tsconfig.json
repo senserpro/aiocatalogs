@@ -5,7 +5,7 @@
     "moduleResolution": "node",
     "lib": ["es2021", "WebWorker", "DOM"],
     "outDir": "dist",
-    "rootDir": "packages",
+    "rootDir": ".",
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "allowJs": true,
