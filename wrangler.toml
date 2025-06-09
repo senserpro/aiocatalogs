@@ -1,0 +1,8 @@
+name = "aiocatalogs"
+main = "index.js"
+compatibility_date = "2025-06-09"
+nodejs_compat = true
+
+[vars]
+AIOCATALOGS_API_RATE_LIMIT = true
+LOG_LEVEL = "info"
