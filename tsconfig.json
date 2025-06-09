@@ -5,7 +5,7 @@
     "moduleResolution": "node",
     "lib": ["es2021", "WebWorker", "DOM"],
     "outDir": "dist",
-    "rootDir": "packages/api",
+    "rootDir": "packages",
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "allowJs": true,
@@ -13,5 +13,6 @@
     "strict": true,
     "types": ["@cloudflare/workers-types", "node"]
   },
-  "include": ["packages/api"]
+  "include": ["packages/**/*", "templates/**/*"],
+  "exclude": ["node_modules", "dist"]
 }
